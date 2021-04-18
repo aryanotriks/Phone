@@ -35,7 +35,6 @@ def lacak():
     link = 'https://api.veriphone.io/v2/verify?phone={}&key=5F3F2D6300E445DEA88684053144966C'.format(no)
     req = requests.get(link)
     jeson = json.loads(req.text)
-    print('\t\033[31;1mName          \033[37;1m: \033[32;1m', jeson['name'])
     print('\t\033[31;1mLocation      \033[37;1m: \033[32;1m', jeson['location'])
     print('\t\033[31;1mphone         \033[37;1m: \033[32;1m', jeson['phone'])
     print('\t\033[31;1mtype          \033[37;1m: \033[32;1m', jeson['phone_type'])
